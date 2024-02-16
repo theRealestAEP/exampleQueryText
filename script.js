@@ -1,5 +1,5 @@
 let activeVideos = 0; // Tracks the number of videos currently displayed
-const maxVideos = 10; // Maximum number of videos to display at once
+const maxVideos = 200; // Maximum number of videos to display at once
 let pendingVideos = 0; // Tracks the number of videos waiting to be displayed
 
 document.addEventListener('DOMContentLoaded', function () {
