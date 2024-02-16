@@ -1,0 +1,13 @@
+body { 
+    background: #1b1613; 
+    color: #FFF;  
+    font-size: 1.2em; 
+  }
+    #text-animate {
+       margin: 30px auto; 
+        width: 500px;
+    }
+    .js p { 
+      visibility: hidden; 
+      position: relative; 
+    }
