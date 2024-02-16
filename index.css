@@ -7,3 +7,14 @@ body {
 .theData {
     color: white;
 }
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.videoFadeOut {
+    animation-name: fadeOut;
+    animation-fill-mode: forwards; /* Keeps the element in the state of the last keyframe when the animation finishes */
+}

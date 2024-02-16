@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,34 +5,7 @@
     <title>Event Data Display</title>
 </head>
 <body>
-    <h1>Event Data</h1>
-    <video autoPlay muted loop>
-        <source src="https://zmolmhdrozzmhordgtnx.supabase.co/storage/v1/object/public/memes/4db7bdb781-CrabRave.webm" type="video/webm">
-    </video>
-    <div id="event-data" class="theData"></div>
-    <script>
-        function getQueryParams() {
-            var params = {};
-            window.location.search.substring(1).split("&").forEach(function (pair) {
-                var keyValue = pair.split("=");
-                params[keyValue[0]] = decodeURIComponent(keyValue[1] || "");
-            });
-            return params;
-        }
-
-        function displayEventData() {
-            var params = getQueryParams();
-            var dataDiv = document.getElementById("event-data");
-            for (var key in params) {
-                if (params.hasOwnProperty(key)) {
-                    var p = document.createElement("p");
-                    p.textContent = key + ": " + params[key];
-                    dataDiv.appendChild(p);
-                }
-            }
-        }
-
-        displayEventData();
-    </script>
+    <div id="container" style="position: relative; height: 100vh; overflow: hidden;"></div>
+    <script src="script.js"></script>
 </body>
 </html>
