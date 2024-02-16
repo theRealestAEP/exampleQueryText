@@ -1,12 +1,9 @@
-body { 
-    background: #1b161300; 
-    font-size: 1.2em; 
-  }
-    #text-animate {
-       margin: 30px auto; 
-        width: 500px;
-    }
-    .js p { 
-      visibility: hidden; 
-      position: relative; 
-    }
+body {
+    background: #1b161300;
+    color: white;
+    font-size: 1.2em;
+    justify-content: center;
+}
+.theData {
+    color: white;
+}
